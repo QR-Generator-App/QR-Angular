@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+HR:wght@100..400&family=Playwrite+PE:wght@100..400&display=swap');
+h1 span {
+    color: white;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+
+}
+h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    
+}
