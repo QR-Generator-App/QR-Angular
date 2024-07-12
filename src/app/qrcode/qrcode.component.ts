@@ -30,6 +30,7 @@ export class QrcodeComponent implements OnInit {
         })
       )
       .subscribe(qrCodeImage => this.qrCodeImage = qrCodeImage);
+      this.qrForm.reset();
   }
 
   downloadImage() {

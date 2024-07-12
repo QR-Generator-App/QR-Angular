@@ -1,13 +1,21 @@
-<div class="h-full w-full m-10 bg-blue-300">
-  <form [formGroup]="qrForm" (ngSubmit)="onAdd()">
-    <label for="message">Message:</label>
-    <input id="message" formControlName="message" />
-    <button type="submit">Generate QR Code</button>
-  </form>
-
-  <div *ngIf="qrCodeImage">
-    <h3>Generated QR Code:</h3>
-    <img [src]="qrCodeImage" alt="QR Code" />
-    <button (click)="downloadImage()">Download QR Code</button>
+<div class="flex m-10 w-screen">
+  <div class="m-2 p-10 justify-center w-1/4 h-full shadow-xl">
+    <form [formGroup]="qrForm" (ngSubmit)="onAdd()" class="space-y-4">
+      <div>
+        <label for="message" class="block text-lg font-semibold text-gray-700">Enter input or Url</label>
+        <input id="message" formControlName="message"
+          class="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+      </div>
+      <button type="submit"
+        class="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Generate
+        QR Code</button>
+    </form>
+  </div>
+  <div *ngIf="qrCodeImage" class="mt-2 text-center rounded-md shadow-2xl w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-700">Generated QR Code:</h3>
+    <img [src]="qrCodeImage" alt="QR Code" class="mt-4 mx-auto border border-gray-300 rounded-lg shadow-md" />
+    <button (click)="downloadImage()"
+      class="mt-4 py-2 px-4 bg-green-600 text-white font-semibold rounded-md shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">Download
+      QR Code</button>
   </div>
 </div>

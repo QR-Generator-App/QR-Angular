@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QrcodeComponent
+    QrcodeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
