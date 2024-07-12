@@ -1,0 +1,13 @@
+<div class="h-full w-full m-10 bg-blue-300">
+  <form [formGroup]="qrForm" (ngSubmit)="onAdd()">
+    <label for="message">Message:</label>
+    <input id="message" formControlName="message" />
+    <button type="submit">Generate QR Code</button>
+  </form>
+
+  <div *ngIf="qrCodeImage">
+    <h3>Generated QR Code:</h3>
+    <img [src]="qrCodeImage" alt="QR Code" />
+    <button (click)="downloadImage()">Download QR Code</button>
+  </div>
+</div>
