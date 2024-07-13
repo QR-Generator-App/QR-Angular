@@ -21,7 +21,7 @@ export class QrcodeComponent implements OnInit {
 
   onAdd() {
     const message = this.qrForm.get('message')?.value;
-    this.http.post('http://localhost:8080/generate', message, { responseType: 'text' })
+    this.http.post('https://qrcodegenerator-lkh0.onrender.com/generate', message, { responseType: 'text' })
       .pipe(
         map(response => 'data:image/png;base64,' + response),
         catchError(error => {
