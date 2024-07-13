@@ -3,12 +3,13 @@ h1 span {
     color: white;
     font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 700;
+    font-size: auto;
 
 }
 h1 {
-    color: white;
-    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: auto;
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
